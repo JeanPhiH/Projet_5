@@ -23,27 +23,27 @@
 	</head>
 
 	<body>
-		<header class="top-header">
-			<h1 class="name">Nina Carducci</h1>
-			<nav class="nav">
-				<ul>
-					<li><a href="#about">À propos</a></li>
-					<li><a href="#gallery">Galerie</a></li>
-					<li><a href="#services">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li>
-						<a
-							class="social-link"
-							href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"
-							><img src="assets/images/instagram.png" alt="Instagram"
-						/></a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section id="header">
+		<header>
+			<div class="top-header">
+				<h1 class="name">Nina Carducci</h1>
+				<nav class="nav">
+					<ul>
+						<li><a href="#about">À propos</a></li>
+						<li><a href="#gallery">Galerie</a></li>
+						<li><a href="#services">Service</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li>
+							<a
+								class="social-link"
+								href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+								target="_blank"
+								><img src="assets/images/instagram.png" alt="Instagram"
+							/></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="header">
 				<div
 					id="carouselExampleIndicators"
 					class="carousel slide"
@@ -81,7 +81,7 @@
 								sizes="(max-width: 650px) 512px, 1024px"
 								src="./assets/images/slider/ryoji-iwata-1024.webp"
 								class="d-block w-100"
-								alt="..."
+								alt="homme d'affaire en costume vu de dos portant un sac sur un passage piéton"
 							/>
 						</div>
 						<div class="carousel-item">
@@ -93,7 +93,8 @@
 								sizes="(max-width: 650px) 512px, 1024px"
 								src="./assets/images/slider/nicholas-green-1024.webp"
 								class="d-block w-100"
-								alt="..."
+								alt="foule avec des personnes qui lèvent les bras"
+								loading="lazy"
 							/>
 						</div>
 						<div class="carousel-item">
@@ -105,7 +106,8 @@
 								sizes="(max-width: 650px) 512px, 1024px"
 								src="./assets/images/slider/edward-cisneros-1024.webp"
 								class="d-block w-100"
-								alt="..."
+								alt="des mariés qui s'embrassent pendant une danse autour de gens qui applaudissent"
+								loading="lazy"
 							/>
 						</div>
 					</div>
@@ -128,7 +130,9 @@
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
-			</section>
+			</div>
+		</header>
+		<main>
 			<section id="about">
 				<div class="picture left">
 					<img
@@ -364,7 +368,16 @@
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="contact">
+				<h3>Contact</h3>
+				<p>Nina Carducci, Photographe professionnelle</p>
+				<p>68 avenue Alsace-Lorraine 33200 Bordeaux</p>
+				<p>05 56 67 78 89</p>
+				<p>Appelez-moi du lundi au vendredi de 10h à 19h</p>
+			<div class="copyright">
+				<p>© 2024 Nina Carducci - Tous droits réservés</p>
+		</footer>
 	</body>
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.min.js"
