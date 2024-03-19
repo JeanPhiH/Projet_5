@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
@@ -9,9 +10,8 @@
 		<title>Nina Carducci, photographe professionnelle à Bordeaux</title>
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/style.css" />
-		<meta charset="UTF-8" />
+		
 		<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-
 		<script defer src="./assets/maugallery.js"></script>
 		<script defer src="./assets/scripts.min.js"></script>
 	</head>
@@ -43,37 +43,16 @@
 					class="carousel slide"
 					data-bs-ride="carousel"
 				>
-					<div class="carousel-indicators">
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="0"
-							class="active"
-							aria-current="true"
-							aria-label="Slide 1"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="1"
-							aria-label="Slide 2"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="2"
-							aria-label="Slide 3"
-						></button>
-					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img
 								srcset="
 									./assets/images/slider/ryoji-iwata-512.webp   512w,
-									./assets/images/slider/ryoji-iwata-1024.webp 1024w
+									./assets/images/slider/ryoji-iwata-1024.webp 1024w,
+									./assets/images/slider/ryoji-iwata-2048.webp 2048w
 								"
-								sizes="(max-width: 650px) 512px, 1024px"
-								src="./assets/images/slider/ryoji-iwata-1024.webp"
+								sizes="(max-width: 650px) 512px, (max-width: 1180px) 1024px, 2048px"
+								src="./assets/images/slider/ryoji-iwata-2048.webp"
 								class="d-block w-100"
 								alt="homme d'affaire en costume vu de dos portant un sac sur un passage piéton"
 							/>
@@ -82,10 +61,11 @@
 							<img
 								srcset="
 									./assets/images/slider/nicholas-green-512.webp   512w,
-									./assets/images/slider/nicholas-green-1024.webp 1024w
+									./assets/images/slider/nicholas-green-1024.webp 1024w,
+									./assets/images/slider/nicholas-green-2048.webp 2048w
 								"
-								sizes="(max-width: 650px) 512px, 1024px"
-								src="./assets/images/slider/nicholas-green-1024.webp"
+								sizes="(max-width: 650px) 512px, (max-width: 1180px) 1024px, 2048px"
+								src="./assets/images/slider/nicholas-green-2048.webp"
 								class="d-block w-100"
 								alt="foule avec des personnes qui lèvent les bras"
 								loading="lazy"
@@ -95,12 +75,13 @@
 							<img
 								srcset="
 									./assets/images/slider/edward-cisneros-512.webp   512w,
-									./assets/images/slider/edward-cisneros-1024.webp 1024w
+									./assets/images/slider/edward-cisneros-1024.webp 1024w,
+									./assets/images/slider/edward-cisneros-2048.webp 2048w
 								"
-								sizes="(max-width: 650px) 512px, 1024px"
-								src="./assets/images/slider/edward-cisneros-1024.webp"
+								sizes="(max-width: 650px) 512px, (max-width: 1180px) 1024px, 2048px"
+								src="./assets/images/slider/edward-cisneros-2048.webp"
 								class="d-block w-100"
-								alt="des mariés qui s'embrassent pendant une danse autour de gens qui applaudissent"
+								alt="des mariés penchés qui s'embrassent autour de gens qui applaudissent"
 								loading="lazy"
 							/>
 						</div>
@@ -123,6 +104,28 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -171,7 +174,7 @@
 							"
 							sizes="(max-width: 650px) 512px, 1024px"
 							src="./assets/images/gallery/concerts/aaron-paul-1024.webp"
-							alt="concert vu du public"
+							alt="la scène d'un concert vue du public"
 						/>
 						<img
 							data-gallery-tag="Entreprises"
