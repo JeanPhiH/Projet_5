@@ -1,43 +1,43 @@
 /* local fonts */
 /* inter-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* spectral-300italic - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Spectral';
-  font-style: italic;
-  font-weight: 300;
-  src: url('./fonts/spectral-v13-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	font-family: "Spectral";
+	font-style: italic;
+	font-weight: 300;
+	src: url("./fonts/spectral-v13-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* spectral-regular - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Spectral';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/spectral-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	font-family: "Spectral";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/spectral-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* spectral-italic - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Spectral';
-  font-style: italic;
-  font-weight: 400;
-  src: url('./fonts/spectral-v13-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	font-family: "Spectral";
+	font-style: italic;
+	font-weight: 400;
+	src: url("./fonts/spectral-v13-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* spectral-800italic - latin */
 @font-face {
-  font-display: swap;
-  font-family: 'Spectral';
-  font-style: italic;
-  font-weight: 800;
-  src: url('./fonts/spectral-v13-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	font-display: swap;
+	font-family: "Spectral";
+	font-style: italic;
+	font-weight: 800;
+	src: url("./fonts/spectral-v13-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 body {
@@ -45,13 +45,13 @@ body {
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: "Inter";
 	font-style: normal;
 }
 .top-header {
 	background-color: white;
 	position: sticky;
-	top:0;
+	top: 0;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -77,7 +77,7 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
 }
 
 .social-link img {
@@ -86,15 +86,15 @@ body {
 
 #about {
 	display: flex;
-	background-color: #F6D2B8;
+	background-color: #f6d2b8;
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
 }
 
 .picture.left::before {
-	content: ' ';
-	background-color: #E5975F;
+	content: " ";
+	background-color: #e5975f;
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -111,10 +111,10 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: auto;
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
@@ -122,7 +122,7 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: "Spectral";
 	font-weight: 800;
 	font-style: italic;
 	display: inline-block;
@@ -133,7 +133,7 @@ body {
 	font-size: 14px;
 }
 
-.title{
+.title {
 	text-align: center;
 	padding-block: 2em;
 }
@@ -143,34 +143,35 @@ body {
 .nav-link {
 	cursor: default;
 }
-.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active-tag,
+.nav-pills .show > .nav-link {
 	color: #000;
-	background-color: #BEB45A;
-	border-radius:0 ;
+	background-color: #beb45a;
+	border-radius: 0;
 	font-weight: bold;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
 }
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
-.item-column::after{
+.item-column::after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 .gallery-item {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	padding: .5em;
+	padding: 0.5em;
 }
-.mg-prev, .mg-next {
+.mg-prev,
+.mg-next {
 	width: 30px;
 	height: 30px;
 	justify-content: center;
@@ -180,7 +181,7 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: "Spectral";
 	font-style: italic;
 	width: 70%;
 	margin: auto;
@@ -191,7 +192,6 @@ body {
 	font-style: italic;
 	font-weight: 300;
 	font-size: 1.5rem;
-
 }
 .quote__author {
 	font-family: Spectral;
@@ -201,12 +201,12 @@ body {
 
 #services {
 	margin: auto;
-	background-color: #A8D5D8 ;
+	background-color: #a8d5d8;
 	position: relative;
 }
-#services .container::before{
-	content: ' ';
-	background-color: #1C6474;
+#services .container::before {
+	content: " ";
+	background-color: #1c6474;
 	position: absolute;
 	width: 100%;
 	height: 30%;
@@ -218,8 +218,7 @@ body {
 #services .container {
 	justify-content: space-between;
 	display: flex;
-	padding : 2em 0;
-
+	padding: 2em 0;
 }
 
 .service {
@@ -236,7 +235,7 @@ body {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #d8d3a8;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -246,8 +245,8 @@ body {
 	display: flex;
 }
 .picture.right::before {
-	content: ' ';
-	background-color: #BEB45A;
+	content: " ";
+	background-color: #beb45a;
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -256,8 +255,7 @@ body {
 	z-index: -1;
 }
 .form-container {
-	flex : 2;
-
+	flex: 2;
 }
 form {
 	display: flex;
@@ -284,35 +282,36 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
-	padding: .5em 1em
+	background-color: #beb45a;
+	padding: 0.5em 1em;
 }
 
 #footer {
 	padding-block: 2em;
-  padding-inline: 2em;
+	padding-inline: 2em;
 }
 
 @media all and (max-width: 1180px) {
 	.picture {
-		flex : 2;
+		flex: 2;
 	}
-	#about, #contact .container {
+	#about,
+	#contact .container {
 		align-items: center;
 	}
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me strong, #about-me p {
+	#about-me strong,
+	#about-me p {
 		width: 100%;
 	}
 }
 
 @media all and (max-width: 1000px) {
-	#about{
+	#about {
 		flex-direction: column;
-
 	}
 	.picture {
 		width: 50%;
@@ -326,7 +325,7 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
 	}
@@ -337,13 +336,13 @@ input[type="submit"] {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
-		margin: 2em 0
+		margin: 2em 0;
 	}
-	.service__description{
+	.service__description {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
@@ -373,7 +372,8 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.top-header .nav,
+	.top-header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
@@ -382,7 +382,8 @@ input[type="submit"] {
 		padding-block: 1em;
 		text-align: center;
 	}
-	.picture.left::before, .picture.right::before {
+	.picture.left::before,
+	.picture.right::before {
 		height: 150px;
 	}
 	#services .container {
@@ -391,7 +392,8 @@ input[type="submit"] {
 	.service {
 		max-width: 90%;
 	}
-	#about, #contact {
+	#about,
+	#contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
@@ -402,4 +404,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
