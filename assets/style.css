@@ -403,8 +403,4 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-	.carousel-item img {
-		width: 512px;
-		height: auto;
-	}
 }
