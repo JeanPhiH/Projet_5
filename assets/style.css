@@ -365,6 +365,9 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+	form {
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -396,9 +399,6 @@ input[type="submit"] {
 	#contact {
 		padding-inline: 2em;
 		padding-block: 2em;
-	}
-	form {
-		width: 100%;
 	}
 	.picture {
 		width: 80%;
